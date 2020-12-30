@@ -30,16 +30,21 @@ class Footer extends Component {
             <div class="container">
                 <div class="level">
                     <div class="level-start">
-                        <a class="footer-logo is-block mb-2" href={siteUrl}>
+                        {/* <a class="footer-logo is-block mb-2" href={siteUrl}>
                             {footerLogo}
-                        </a>
+                        </a> */}
                         <p class="is-size-7">
                             <span dangerouslySetInnerHTML={{ __html: `&copy; ${siteYear} ${author || siteTitle}` }}></span>
-                            &nbsp;&nbsp;Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>&nbsp;&&nbsp;
+                        </p>
+                        <p class="is-size-7">
+                            Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>&nbsp;&&nbsp;
                             <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
                             {showVisitorCounter ? <br /> : null}
                             {showVisitorCounter ? <span id="busuanzi_container_site_uv"
                                 dangerouslySetInnerHTML={{ __html: visitorCounterTitle }}></span> : null}
+                        </p>
+                        <p class="is-size-7">
+                            Theme Modified by <a href="https://github.com/xMuu/hexo-theme-icarus" target="_blank" rel="noopener">xMuu</a>&nbsp;
                         </p>
                     </div>
                     <div class="level-end">
