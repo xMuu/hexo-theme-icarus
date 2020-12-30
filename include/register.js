@@ -1,7 +1,7 @@
 const logger = require('hexo-log')();
 
 module.exports = hexo => {
-    logger.info('=== Registering Hexo extensions ===');
+    logger.info('===  Registering Hexo extensions  ===');
     require('hexo-component-inferno/lib/hexo/filter/locals')(hexo);
     require('hexo-component-inferno/lib/hexo/generator/assets')(hexo);
     require('hexo-component-inferno/lib/hexo/generator/insight')(hexo);
@@ -12,4 +12,5 @@ module.exports = hexo => {
     require('hexo-component-inferno/lib/hexo/helper/cdn')(hexo);
     require('hexo-component-inferno/lib/hexo/helper/page')(hexo);
     require('hexo-component-inferno/lib/core/view').init(hexo);
+    logger.info(`=====================================`);
 };
